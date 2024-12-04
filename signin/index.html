@@ -27,6 +27,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/signin.css"/>
 
   <script defer src="../js/common.js"></script>
 </head>
@@ -365,7 +366,29 @@
   </header>
 
   <section class="signin">
-
+    <h1>로그인</h1>
+    <div class="signin__card">
+        <h2>
+            <strong>Welcome!</strong> 스타벅스에 오신 것을 환영합니다.
+        </h2>
+        <form>
+            <input type="text" placeholder="아이디를 입력하세요.">
+            <input type="password" placeholder="비밀번호를 입력하세요.">
+            <input type="submit" value="로그인">
+            <!-- submit은 어딘가에 제출한다는 뭐 그런역할 -->
+            <!-- 나중에 이 form 태그 이용해서 나중에 submit이라는 타입의 input요소 선택하면 form 태그 동작하면서 실제 어떤 주소로 안에 내용 전송해줌, 그것이 서버가 될거고 거기서 로그인 되게 처리해줌(백엔드..) -->
+            <p>
+                * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br/>
+                정기적으로 비밀번호 변경하세요!
+            </p>
+            
+        </form>
+        <div class="actions">
+            <a href="javascript:void(0)">회원가입</a>
+            <a href="javascript:void(0)">아이디 찾기</a>
+            <a href="javascript:void(0)">비밀번호 찾기</a>
+        </div>
+    </div>
   </section>
 
     <!-- FOOTER -->
